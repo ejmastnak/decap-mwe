@@ -1,0 +1,17 @@
+{
+  "name": "decap-demo",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently \"npx decap-server\" \"astro dev\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.14.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/content/home.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { name: "heading", label: "Heading", widget: "string" }
+          - { name: "link_text", label: "Link Text", widget: "string" }
+          - { name: "body", label: "Body", widget: "text" }
+      - file: "src/content/foo.json"
+        label: "Foo Page"
+        name: "foo"
+        fields:
+          - { name: "heading", label: "Heading", widget: "string" }
+          - { name: "link_text", label: "Link Text", widget: "string" }
+          - { name: "body", label: "Body", widget: "text" }
+          - { name: "image", label: "Image", widget: "image" }

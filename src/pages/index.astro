@@ -1,0 +1,13 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import data from "../content/home.json";
+
+const title = "Home"
+const description = "The home page"
+---
+
+<BaseLayout title={title} description={description}>
+  <h1>{data.heading}</h1>
+  <p>{data.body}</p>
+  <a href="/foo">{data.link_text}</a>
+</BaseLayout>
